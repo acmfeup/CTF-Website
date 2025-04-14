@@ -1,3 +1,27 @@
+
+
+<p align="center">
+  <a href="https://github.com/acmfeup/CTF-Website/actions/workflows/check.yml">
+    <img alt="CI" src="https://github.com/acmfeup/CTF-Website/actions/workflows/check.yml/badge.svg">
+  </a>
+  <a href="https://github.com/acmfeup/CTF-Website/blob/main/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/acmfeup/CTF-Website" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/acmfeup/CTF-Website/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/acmfeup/CTF-Website?style=social" />
+  </a>
+  <a href="https://github.com/acmfeup/CTF-Website/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/acmfeup/CTF-Website" />
+  </a>
+  <a href="https://github.com/acmfeup/CTF-Website/pulls">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/acmfeup/CTF-Website" />
+  </a>
+</p>
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
