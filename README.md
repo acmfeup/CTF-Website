@@ -1,5 +1,3 @@
-
-
 <p align="center">
   <a href="https://github.com/acmfeup/CTF-Website/actions/workflows/check.yml">
     <img alt="CI" src="https://github.com/acmfeup/CTF-Website/actions/workflows/check.yml/badge.svg">
@@ -20,7 +18,6 @@
     <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/acmfeup/CTF-Website" />
   </a>
 </p>
-
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
