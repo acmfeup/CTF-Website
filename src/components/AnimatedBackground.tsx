@@ -35,6 +35,16 @@ export default function AnimatedBackground() {
                      bg-[#004080] opacity-15 blur-3xl 
                      ${mounted ? "animate-[blob_18s_infinite_6s]" : ""}`}
         />
+        <div
+          className={`absolute top-[5%] right-[5%] w-[300px] h-[300px] rounded-full 
+                     bg-[#1a5fa0] opacity-25 blur-3xl 
+                     ${mounted ? "animate-[blob_18s_infinite_3s]" : ""}`}
+        />
+        <div
+          className={`absolute top-[4%] left-[45%] w-[400px] h-[400px] rounded-full 
+                     bg-[#003366] opacity-25 blur-3xl 
+                     ${mounted ? "animate-[blob_18s_infinite_5s]" : ""}`}
+        />
       </div>
     </div>
   );
