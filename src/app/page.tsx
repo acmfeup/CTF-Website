@@ -55,6 +55,31 @@ export default function Home() {
         className="min-h-screen w-full py-20 px-6"
       >
         <div className="max-w-5xl mx-auto">
+          {/* Sponsors Section */}
+          <div className="backdrop-blur-lg bg-white/10 dark:bg-black/20 rounded-2xl p-8 shadow-xl border border-white/20 mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-center">
+              Patrocinadores
+            </h2>
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12">
+              {[...Array(5)].map((_, index) => (
+                <div key={index} className="flex flex-col items-center">
+                  <div className="bg-white/20 dark:bg-black/30 backdrop-blur-sm rounded-full p-4 w-24 h-24 flex items-center justify-center mb-2">
+                    <Image
+                      src="/acm-logo.svg"
+                      alt={`Sponsor ${index + 1}`}
+                      width={60}
+                      height={60}
+                      className="opacity-80"
+                    />
+                  </div>
+                  <span className="text-sm font-medium">
+                    Sponsor {index + 1}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {/* Description */}
             <div className="backdrop-blur-lg bg-white/10 dark:bg-black/20 rounded-2xl p-8 shadow-xl border border-white/20">
