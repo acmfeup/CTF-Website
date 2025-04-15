@@ -2,49 +2,42 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start max-w-3xl w-full">
-        {/* ACM Logo */}
-        <div className="w-full flex justify-center sm:justify-start">
-          <Image
-            src="/acm-logo.svg"
-            alt="ACM FEUP logo"
-            width={360}
-            height={38}
-            priority
-          />
-        </div>
-
-        <div className="text-center sm:text-left w-full">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+    <div className="flex flex-col items-center justify-center min-h-screen w-full">
+      <main className="flex flex-col items-center justify-center w-full max-w-5xl px-6 py-12 text-center">
+        <div className="mb-12 w-full">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 tracking-tight">
             Competição CTFs ACM FEUP
           </h1>
-          <p className="text-xl sm:text-2xl text-foreground/80 font-medium">
+          <p className="text-2xl sm:text-3xl text-foreground/80 font-medium">
             17 de maio 2025
           </p>
         </div>
 
-        <p className="text-base sm:text-lg text-center sm:text-left text-foreground/70">
-          A maior competição de CTFs em Portugal!
-        </p>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row w-full sm:w-auto">
+        <div className="flex gap-6 items-center flex-col sm:flex-row mt-8">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[#002F6C] hover:bg-[#00245a] text-white gap-2 font-medium text-sm sm:text-base h-12 px-8 w-full sm:w-auto"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[#002F6C] hover:bg-[#00245a] text-white gap-2 font-medium text-base sm:text-lg h-14 px-10 w-full sm:w-auto min-w-[200px]"
             href="#register"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Registar Agora
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-12 px-8 w-full sm:w-auto"
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-base sm:text-lg h-14 px-10 w-full sm:w-auto min-w-[200px]"
             href="#learn-more"
           >
             Saber Mais
           </a>
         </div>
       </main>
+
+      <div className="absolute top-8 left-8">
+        <Image
+          src="/acm-logo.svg"
+          alt="ACM FEUP logo"
+          width={300}
+          height={60}
+          priority
+        />
+      </div>
     </div>
   );
 }
