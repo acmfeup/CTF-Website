@@ -174,9 +174,9 @@ export default function Home() {
                   id="members"
                   className="w-full p-3 rounded-lg bg-white/20 dark:bg-black/30 backdrop-blur-sm border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#002F6C]"
                 >
-                  <option value="2">3 participantes</option>
-                  <option value="3">4 participantes</option>
-                  <option value="4">5 participantes</option>
+                  <option value="3">3 participantes</option>
+                  <option value="4">4 participantes</option>
+                  <option value="5">5 participantes</option>
                 </select>
               </div>
               <button
