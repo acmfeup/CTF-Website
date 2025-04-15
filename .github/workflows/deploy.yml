@@ -21,7 +21,7 @@ jobs:
             set -e
 
             if [ ! -d "${{ secrets.PROJECT_DIR }}" ]; then
-              git clone https://github.com/ACM-FEUP/your-ctf-repo.git ${{ secrets.PROJECT_DIR }}
+              git clone https://github.com/acmfeup/CTF-Website.git ${{ secrets.PROJECT_DIR }}
             fi
 
             cd ${{ secrets.PROJECT_DIR }}
