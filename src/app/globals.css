@@ -12,6 +12,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --color-main-green: #00b589;
+  --color-secondary-green: #4a776c;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -41,6 +46,16 @@ body {
 
     100% {
       transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
     }
   }
 }
