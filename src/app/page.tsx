@@ -1,14 +1,14 @@
 "use client";
 
+import CustomCountdown from "@/components/CustomCountdown";
+import LocationCard from "@/components/LocationCard";
+import RegisterButton from "@/components/RegisterButton";
+import SponsorCarousel from "@/components/SponsorCarousel";
 import Image from "next/image";
 import { useRef } from "react";
 
 export default function Home() {
   const secondSectionRef = useRef<HTMLDivElement>(null);
-
-  const scrollToSecondSection = () => {
-    secondSectionRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <div className="relative w-full">
@@ -23,63 +23,26 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex gap-6 items-center flex-col sm:flex-row mt-8">
-            <a
-              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-[#002F6C] hover:bg-[#00245a] text-white gap-2 font-medium text-base sm:text-lg h-14 px-10 w-full sm:w-auto min-w-[200px]"
-              href="#register"
-            >
-              Registar Agora
-            </a>
-            <button
-              onClick={scrollToSecondSection}
-              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-base sm:text-lg h-14 px-10 w-full sm:w-auto min-w-[200px]"
-            >
-              Saber Mais
-            </button>
+          <RegisterButton />
+
+          <div className="mt-8">
+            <CustomCountdown />
+          </div>
+
+          <div className="mt-6">
+            <LocationCard location="FEUP, Porto" />
           </div>
         </main>
-
-        <div className="absolute top-8 left-8">
-          <Image
-            src="/acm-logo.svg"
-            alt="ACM FEUP logo"
-            width={120}
-            height={30}
-            priority
-          />
-        </div>
       </section>
 
       <section
         ref={secondSectionRef}
         className="min-h-screen w-full py-20 px-6"
       >
-        <div className="max-w-5xl mx-auto">
-          {/* Sponsors Section */}
-          <div className="backdrop-blur-lg bg-white/10 dark:bg-black/20 rounded-2xl p-8 shadow-xl border border-white/20 mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">
-              Patrocinadores
-            </h2>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-12">
-              {[...Array(5)].map((_, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <div className="bg-white/20 dark:bg-black/30 backdrop-blur-sm rounded-full p-4 w-24 h-24 flex items-center justify-center mb-2">
-                    <Image
-                      src="/acm-logo.svg"
-                      alt={`Sponsor ${index + 1}`}
-                      width={60}
-                      height={60}
-                      className="opacity-80"
-                    />
-                  </div>
-                  <span className="text-sm font-medium">
-                    Sponsor {index + 1}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Sponsor Carousel */}
+        <SponsorCarousel />
 
+        <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {/* Description */}
             <div className="backdrop-blur-lg bg-white/10 dark:bg-black/20 rounded-2xl p-8 shadow-xl border border-white/20">
@@ -133,59 +96,6 @@ export default function Home() {
                 <p className="text-xl">TBD</p>
               </div>
             </div>
-          </div>
-
-          {/* Registration Form Section */}
-          <div
-            id="register"
-            className="backdrop-blur-lg bg-white/10 dark:bg-black/20 rounded-2xl p-8 shadow-xl border border-white/20"
-          >
-            <h2 className="text-3xl font-bold mb-6 text-center">
-              Registar Equipa
-            </h2>
-            <form className="max-w-2xl mx-auto">
-              <div className="mb-6">
-                <label htmlFor="team-name" className="block text-lg mb-2">
-                  Nome da Equipa
-                </label>
-                <input
-                  type="text"
-                  id="team-name"
-                  className="w-full p-3 rounded-lg bg-white/20 dark:bg-black/30 backdrop-blur-sm border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#002F6C]"
-                  placeholder="Nome da equipa"
-                />
-              </div>
-              <div className="mb-6">
-                <label htmlFor="email" className="block text-lg mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full p-3 rounded-lg bg-white/20 dark:bg-black/30 backdrop-blur-sm border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#002F6C]"
-                  placeholder="alice@email.com"
-                />
-              </div>
-              <div className="mb-8">
-                <label htmlFor="members" className="block text-lg mb-2">
-                  Número de Participantes
-                </label>
-                <select
-                  id="members"
-                  className="w-full p-3 rounded-lg bg-white/20 dark:bg-black/30 backdrop-blur-sm border border-white/10 focus:outline-none focus:ring-2 focus:ring-[#002F6C]"
-                >
-                  <option value="3">3 participantes</option>
-                  <option value="4">4 participantes</option>
-                  <option value="5">5 participantes</option>
-                </select>
-              </div>
-              <button
-                type="submit"
-                className="w-full sm:w-auto min-w-[200px] mx-auto block rounded-full border border-solid border-transparent transition-colors bg-[#002F6C] hover:bg-[#00245a] text-white font-medium text-lg h-14 px-10"
-              >
-                Submeter Inscrição
-              </button>
-            </form>
           </div>
         </div>
       </section>
