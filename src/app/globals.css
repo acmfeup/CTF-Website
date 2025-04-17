@@ -31,6 +31,22 @@ body {
 }
 
 @layer utilities {
+  @keyframes glow {
+    0%,
+    20%,
+    100% {
+      box-shadow: 0 0 0px var(--color-main-green);
+    }
+
+    10% {
+      box-shadow: 0 0 20px var(--color-main-green);
+    }
+  }
+
+  .animate-glow {
+    animation: glow 9s ease-in-out infinite;
+  }
+
   @keyframes blob {
     0% {
       transform: translate(0px, 0px) scale(1);
