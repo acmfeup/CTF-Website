@@ -49,7 +49,7 @@ export default function AboutTheEvent() {
         className="h-full w-full space-y-4"
         hasPadding={true}
       >
-        <h1 className="text-4xl sm:ext-5xl font-bold">Prizes?</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold">Prizes?</h1>
         <p className="text-3xl">
           We’re giving prizes totaling over 800€ – don’t waste your chance!
         </p>
