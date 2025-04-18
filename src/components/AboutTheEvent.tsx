@@ -9,8 +9,8 @@ const jura = Jura({
 export default function AboutTheEvent() {
   return (
     <div
-      className={`grid gap-4 justify-center items-start w-full max-w-screen-xl mx-auto ${jura.className} 
-	grid-cols-1 sm:grid-cols-2 `}
+      className={`px-8 grid gap-4 justify-center items-start w-full max-w-screen-xl mx-auto ${jura.className} 
+	grid-cols-1 md:grid-cols-2 `}
     >
       <GlassCard
         hasBorder={true}
