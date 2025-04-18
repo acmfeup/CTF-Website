@@ -17,7 +17,8 @@
     "prettier": "^3.5.3",
     "react": "^19.0.0",
     "react-countdown": "^2.3.6",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-fast-marquee": "^1.6.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -16,16 +16,18 @@ export default function AboutTheEvent() {
         hasBorder={true}
         isRounded={true}
         className="h-full w-full space-y-4"
+        hasPadding={true}
       >
-        <h1 className="text-5xl font-bold">Networking?</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold">Networking?</h1>
         <p className="text-3xl">Talk with the companies & meet new hackers.</p>
       </GlassCard>
       <GlassCard
         hasBorder={true}
         isRounded={true}
         className="h-full w-full space-y-4"
+        hasPadding={true}
       >
-        <h1 className="text-5xl font-bold">Food?</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold">Food?</h1>
         <p className="text-3xl">
           We supply Lunch and Coffee Break to all participants.
         </p>
@@ -34,8 +36,9 @@ export default function AboutTheEvent() {
         hasBorder={true}
         isRounded={true}
         className="h-full w-full space-y-4"
+        hasPadding={true}
       >
-        <h1 className="text-5xl font-bold">Difficulty Level?</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold">Difficulty Level?</h1>
         <p className="text-3xl">
           Beginner-friendly with mini workshops to help you start.
         </p>
@@ -44,8 +47,9 @@ export default function AboutTheEvent() {
         hasBorder={true}
         isRounded={true}
         className="h-full w-full space-y-4"
+        hasPadding={true}
       >
-        <h1 className="text-5xl font-bold">Prizes?</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold">Prizes?</h1>
         <p className="text-3xl">
           We’re giving prizes totaling over 800€ – don’t waste your chance!
         </p>

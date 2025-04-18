@@ -1,57 +1,44 @@
 import Image from "next/image";
 import GlassCard from "./GlassCard";
+import Marquee from "react-fast-marquee";
 
 export default function SponsorCarousel() {
+  function ImageContainer({ src, index }: { src: string; index: number }) {
+    return (
+      <div className="relative w-[150px] h-[150px] mr-20">
+        <Image
+          src={src}
+          alt={`Sponsor ${index + 1}`}
+          fill
+          className="object-contain"
+        />
+      </div>
+    );
+  }
+
   const sponsors = [
     "/logos/71.png",
     "/logos/CGI.png",
     "/logos/Checkmarx.png",
     "/logos/Euronext.png",
     "/logos/MSI.png",
+    "/logos/acm-logo.svg",
+    "/logos/xstf-logo.svg",
   ];
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="w-full">
       <GlassCard>
-        <div className="flex animate-[scroll_20s_linear_infinite] w-[200%]">
-          {/* Group 1 */}
-          <div className="flex justify-between w-full pr-4">
-            {sponsors.map((src, index) => (
-              <div
-                key={`first-${index}`}
-                className="flex-1 flex justify-center px-4"
-              >
-                <div className="relative w-[100px] h-[100px]">
-                  <Image
-                    src={src}
-                    alt={`Sponsor ${index + 1}`}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Group 2 (duplicate) */}
-          <div className="flex justify-between w-full pl-4">
-            {sponsors.map((src, index) => (
-              <div
-                key={`second-${index}`}
-                className="flex-1 flex justify-center px-4"
-              >
-                <div className="relative w-[100px] h-[100px]">
-                  <Image
-                    src={src}
-                    alt={`Sponsor duplicate ${index + 1}`}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <Marquee
+          autoFill={true}
+          speed={50}
+          pauseOnHover={true}
+          className="w-full"
+        >
+          {sponsors.map((src, index) => (
+            <ImageContainer key={index} src={src} index={index} />
+          ))}
+        </Marquee>
       </GlassCard>
     </div>
   );
