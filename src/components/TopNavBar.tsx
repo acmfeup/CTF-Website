@@ -18,12 +18,14 @@ export default function TopNavBar() {
           ACM & xSTF
         </p>
       </div>
+      {/*
       <div
         className={`flex flex-row text-4xl space-x-10 ${Jersey.className} opacity-75`}
       >
         <p>About</p>
         <p>Sponsors</p>
       </div>
+			*/}
     </nav>
   );
 }
