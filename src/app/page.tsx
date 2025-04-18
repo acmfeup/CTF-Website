@@ -4,6 +4,7 @@ import SponsorCarousel from "@/components/SponsorCarousel";
 import TitleSection from "@/components/TitleSection";
 import Image from "next/image";
 import { useRef } from "react";
+import AboutTheEvent from "@/components/AboutTheEvent";
 import { Jura } from "next/font/google";
 
 const jura = Jura({
@@ -28,6 +29,10 @@ export default function Home() {
           <p>Team up (3-5 players).</p>
           <p>Capture the flags.</p>
           <p>Win awesome prizes!</p>
+        </div>
+
+        <div className="ml-80">
+          <AboutTheEvent />
         </div>
       </section>
 
