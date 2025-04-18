@@ -1,9 +1,7 @@
 "use client";
 
-import CustomCountdown from "@/components/CustomCountdown";
-import LocationCard from "@/components/LocationCard";
-import RegisterButton from "@/components/RegisterButton";
 import SponsorCarousel from "@/components/SponsorCarousel";
+import TitleSection from "@/components/TitleSection";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -12,33 +10,8 @@ export default function Home() {
 
   return (
     <div className="relative w-full">
-      <section className="flex flex-col items-center justify-center min-h-screen w-full">
-        <main className="flex flex-col items-center justify-center w-full max-w-5xl px-6 py-12 text-center">
-          <div className="mb-12 w-full">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 tracking-tight">
-              Competição CTFs ACM FEUP
-            </h1>
-            <p className="text-2xl sm:text-3xl text-foreground/80 font-medium">
-              17 de maio 2025
-            </p>
-          </div>
-
-          <RegisterButton />
-
-          <div className="mt-8">
-            <CustomCountdown />
-          </div>
-
-          <div className="mt-6">
-            <LocationCard location="FEUP, Porto" />
-          </div>
-        </main>
-      </section>
-
-      <section
-        ref={secondSectionRef}
-        className="min-h-screen w-full py-20 px-6"
-      >
+      <TitleSection />
+      <section ref={secondSectionRef} className="min-h-screen w-full py-20 ">
         {/* Sponsor Carousel */}
         <SponsorCarousel />
 
