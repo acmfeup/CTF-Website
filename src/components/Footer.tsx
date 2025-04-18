@@ -42,7 +42,7 @@ export default function Footer() {
           />
           <Image
             src="/logos/xstf-logo.svg"
-            alt="ACM Logo"
+            alt="xSTF Logo"
             width={150}
             height={150}
             className="shrink-0"
