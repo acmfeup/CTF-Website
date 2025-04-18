@@ -11,7 +11,7 @@ export default function GlassCard({
 }: GlassCardProps) {
   return (
     <div
-      className={` backdrop-blur-sm bg-black/20 rounded-2xl p-6 shadow-xl ${className} ${hasBorder ? "border border-white/20" : ""}`}
+      className={` backdrop-blur-sm bg-main-green/7 rounded-2xl p-6 shadow-xl ${className} ${hasBorder ? "border border-main-green/40" : ""}`}
     >
       {children}
     </div>
