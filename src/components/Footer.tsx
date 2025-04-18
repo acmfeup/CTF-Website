@@ -11,7 +11,10 @@ const jura = Jura({
 export default function Footer() {
   return (
     <footer>
-      <GlassCard className="w-full flex flex-row justify-between items-center overflow-hidden">
+      <GlassCard
+        className="w-full flex flex-row justify-between items-center overflow-hidden"
+        hasPadding={true}
+      >
         <div className="flex flex-row items-center gap-4">
           <a
             href="mailto:geral@acmfeup.eu"
