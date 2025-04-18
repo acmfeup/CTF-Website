@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function MouseFollowBlob() {
+export default function MouseFollowerBlob() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
