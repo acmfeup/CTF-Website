@@ -20,6 +20,12 @@ export default function Home() {
       <TitleSection />
       <section ref={secondSectionRef} className="w-full">
         {/* Sponsor Carousel */}
+
+        <div
+          className={`flex flex-col items-center text-center ${jura.className} text-5xl mb-4`}
+        >
+          <p>Powered by:</p>
+        </div>
         <SponsorCarousel />
 
         {/* Subtitle */}

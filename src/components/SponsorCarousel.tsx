@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 export default function SponsorCarousel() {
   function ImageContainer({ src, index }: { src: string; index: number }) {
     return (
-      <div className="relative w-[100px] h-[100px] mr-20">
+      <div className="relative w-[150px] h-[150px] mr-20">
         <Image
           src={src}
           alt={`Sponsor ${index + 1}`}
@@ -22,6 +22,8 @@ export default function SponsorCarousel() {
     "/logos/Checkmarx.png",
     "/logos/Euronext.png",
     "/logos/MSI.png",
+    "/logos/acm-logo.svg",
+    "/logos/xstf-logo.svg",
   ];
 
   return (
