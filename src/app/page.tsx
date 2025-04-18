@@ -2,9 +2,9 @@
 
 import SponsorCarousel from "@/components/SponsorCarousel";
 import TitleSection from "@/components/TitleSection";
-import Image from "next/image";
 import { useRef } from "react";
 import AboutTheEvent from "@/components/AboutTheEvent";
+import Footer from "@/components/Footer";
 import { Jura } from "next/font/google";
 
 const jura = Jura({
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="relative w-full">
       <TitleSection />
-      <section ref={secondSectionRef} className="min-h-screen w-full py-20 ">
+      <section ref={secondSectionRef} className="w-full">
         {/* Sponsor Carousel */}
         <SponsorCarousel />
 
@@ -31,32 +31,15 @@ export default function Home() {
           <p>Win awesome prizes!</p>
         </div>
 
-        <div className="ml-80">
+        <div className="mt-16">
           <AboutTheEvent />
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="backdrop-blur-lg bg-white/5 dark:bg-black/30 border-t border-white/10 py-8 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center">
-          <div className="mb-4 sm:mb-0">
-            <Image
-              src="/acm-logo.svg"
-              alt="ACM FEUP logo"
-              width={100}
-              height={25}
-            />
-          </div>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-[#002F6C] transition-colors">
-              Contacto
-            </a>
-            <a href="#" className="hover:text-[#002F6C] transition-colors">
-              ACM FEUP
-            </a>
-          </div>
-        </div>
-      </footer>
+      <div className="mt-16">
+        <Footer />
+      </div>
     </div>
   );
 }
