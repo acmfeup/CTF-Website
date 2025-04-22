@@ -22,7 +22,7 @@ export default function Home() {
         {/* Sponsor Carousel */}
 
         <div
-          className={`flex flex-col items-center text-center ${jura.className} text-5xl mb-4`}
+          className={`flex flex-col items-center text-center ${jura.className} text-4xl sm:text-5xl mb-10`}
         >
           <p>Powered by:</p>
         </div>
@@ -30,7 +30,7 @@ export default function Home() {
 
         {/* Subtitle */}
         <div
-          className={`flex flex-col items-center text-center ${jura.className} text-5xl mt-16`}
+          className={`flex flex-col items-center text-center ${jura.className} text-3xl sm:text-5xl mt-16`}
         >
           <p>Team up (3-5 players).</p>
           <p>Capture the flags.</p>
