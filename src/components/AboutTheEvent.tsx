@@ -40,7 +40,7 @@ export default function AboutTheEvent() {
       >
         <h1 className="text-4xl sm:text-5xl font-bold">Difficulty Level?</h1>
         <p className="text-3xl">
-          Beginner-friendly with mini workshops to help you start.
+          Challenges for all levels, with a mini workshop to get you started.
         </p>
       </GlassCard>
       <GlassCard
