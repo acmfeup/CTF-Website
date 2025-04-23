@@ -16,7 +16,7 @@ export default function MouseFollowerBlob() {
   }, []);
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden">
+    <div className="fixed inset-0 -z-10 overflow-hidden hidden sm:block">
       <div
         className="absolute w-[200] h-[200] rounded-full bg-main-green opacity-30 blur-3xl"
         style={{
