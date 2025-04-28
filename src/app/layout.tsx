@@ -36,6 +36,7 @@ export default function RootLayout({
         <AnimatedBackground />
         <MouseFollowerBlob />
         <TopNavBar />
+
         {children}
       </body>
     </html>
