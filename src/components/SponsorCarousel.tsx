@@ -13,7 +13,7 @@ export default function SponsorCarousel() {
     url: string;
   }) {
     return (
-      <a href={url}>
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <div className="relative w-[150px] h-[150px] mr-20">
           <Image
             src={src}
