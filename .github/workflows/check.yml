@@ -21,13 +21,10 @@ jobs:
           node-version: "23"
 
       - name: Install dependencies
-        working-directory: cherrypick-fe
         run: npm ci
 
       - name: Run Linter
-        working-directory: cherrypick-fe
         run: npm run lint
 
       - name: Check Formatting
-        working-directory: cherrypick-fe
         run: npm run format
