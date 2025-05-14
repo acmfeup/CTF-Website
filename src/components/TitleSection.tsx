@@ -28,7 +28,8 @@ export default function TitleSection() {
             <a
               href={"https://forms.gle/GKXP2WbujsxQoiqP8"}
               className="underline underline-offset-4 hover:text-[#FFC107]"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Register without a team
             </a>
