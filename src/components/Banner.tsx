@@ -32,6 +32,7 @@ const Banner = ({ defaultVisible = true }: BannerProps) => {
                 href={"https://forms.gle/GKXP2WbujsxQoiqP8"}
                 className="underline underline-offset-4 hover:text-[#FFC107]"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 this quick form
               </a>
