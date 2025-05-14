@@ -4,6 +4,7 @@ import "./globals.css";
 import TopNavBar from "@/components/TopNavBar";
 import MouseFollowerBlob from "@/components/MouseFollowerBlob";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import { Banner } from "@/components/Banner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Banner defaultVisible={true} />
         <AnimatedBackground />
         <MouseFollowerBlob />
         <TopNavBar />
