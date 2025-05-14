@@ -23,6 +23,19 @@ export default function TitleSection() {
 
         <RegisterButton />
 
+        <div className="flex-1 text-center mt-2">
+          <span className="text-lg text-[#DFF6E1]">
+            <a
+              href={"https://forms.gle/GKXP2WbujsxQoiqP8"}
+              className="underline underline-offset-4 hover:text-[#FFC107]"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Register without a team
+            </a>
+          </span>
+        </div>
+
         <div className="mt-8">
           <CustomCountdown />
         </div>
