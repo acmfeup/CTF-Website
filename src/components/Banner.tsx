@@ -19,7 +19,7 @@ const Banner = ({ defaultVisible = true }: BannerProps) => {
   if (!isVisible) return null;
 
   return (
-    <section className="sticky top-0 w-full bg-[#1B4332] px-4 py-3 shadow-sm z-47000">
+    <section className="sticky top-0 w-full bg-[#00694E] px-4 py-3 shadow-sm z-47000">
       <div className="flex items-center justify-between gap-2">
         <div className="flex-1 text-center">
           <span className="text-sm text-[#DFF6E1]">
@@ -27,7 +27,7 @@ const Banner = ({ defaultVisible = true }: BannerProps) => {
               🚀 Ready to compete but missing a team?
             </span>{" "}
             {" Fill out "}
-            <span className="text-[#A8D5BA]">
+            <span className="text-[#84F0D5]">
               <a
                 href={"https://forms.gle/GKXP2WbujsxQoiqP8"}
                 className="underline underline-offset-4 hover:text-[#FFC107]"
