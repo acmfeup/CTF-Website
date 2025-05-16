@@ -36,7 +36,7 @@ export default function CustomCountdown() {
 
   return (
     <Countdown
-      date={new Date("2025-05-17T00:00:00")}
+      date={new Date("2025-05-17T09:45:00")}
       renderer={renderer}
       className="mt-8"
     />
