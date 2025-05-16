@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Banner defaultVisible={true} />
+        <Banner defaultVisible={false} />
         <AnimatedBackground />
         <MouseFollowerBlob />
         <TopNavBar />
