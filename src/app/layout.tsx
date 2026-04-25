@@ -1,46 +1,50 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+	Barlow_Condensed,
+	Barlow_Semi_Condensed,
+	IBM_Plex_Mono,
+} from "next/font/google";
 import "./globals.css";
-import TopNavBar from "@/components/TopNavBar";
-import MouseFollowerBlob from "@/components/MouseFollowerBlob";
-import AnimatedBackground from "@/components/AnimatedBackground";
-import { Banner } from "@/components/Banner";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const barlowCondensed = Barlow_Condensed({
+	variable: "--font-barlow-condensed",
+	subsets: ["latin"],
+	weight: ["400", "600", "700", "800", "900"],
+	style: ["normal", "italic"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const barlowSemiCondensed = Barlow_Semi_Condensed({
+	variable: "--font-barlow-semi-condensed",
+	subsets: ["latin"],
+	weight: ["400", "500", "600"],
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+	variable: "--font-ibm-plex-mono",
+	subsets: ["latin"],
+	weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "ACM & xSTF CTF",
-  description: "Capture the Flag Competition by ACM and xSTF",
+	title: "ACM xSTF 2026 — CTF Event",
+	description: "Capture the Flag Competition by ACM and xSTF",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <head>
-        <meta name="apple-mobile-web-app-title" content="CTFACM" />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Banner defaultVisible={false} />
-        <AnimatedBackground />
-        <MouseFollowerBlob />
-        <TopNavBar />
-
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<head>
+				<meta name="apple-mobile-web-app-title" content="CTFACM" />
+			</head>
+			<body
+				className={`${barlowCondensed.variable} ${barlowSemiCondensed.variable} ${ibmPlexMono.variable} antialiased`}
+			>
+				{children}
+			</body>
+		</html>
+	);
 }
