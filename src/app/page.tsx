@@ -13,7 +13,8 @@ export default function LandingPage() {
 		"Connected. Welcome, participant.",
 		"CTF starts: 2026-05-23 · 09:00 · FEUP",
 		"10h · 8 categories · 21 challenges",
-		"$ _",
+		"Refuel on us: lunch & snacks included.",
+		"$ ",
 	]);
 
 	const countdownItems = [

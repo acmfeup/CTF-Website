@@ -35,7 +35,7 @@ function Section({
 const scheduleItems = [
 	["9:00", "Opening ceremony - B002, FEUP"],
 	["9:30", "Beginning of the competition"],
-	["12:00 - 13:00", "Lunch break"],
+	["13:00 - 15:00", "Lunch window"],
 	["19:30", "End of the competition"],
 	["20:00", "Closing ceremony & awards - B002, FEUP"],
 ];
@@ -106,7 +106,7 @@ export default function AboutPage() {
 							{[
 								["DATE", "May 23, 2026"],
 								["DURATION", "10 hours"],
-								["FORMAT", "On-site"],
+								["FORMAT", "On-site (FEUP)"],
 							].map(([label, value]) => (
 								<div key={label}>
 									<div
@@ -130,8 +130,68 @@ export default function AboutPage() {
 
 			{/* Content */}
 			<div className="px-6 md:px-10 py-14 max-w-[1000px] mx-auto">
+				{/* Prizes */}
+				<Section title="Prizes" width="100">
+					<div className="flex flex-col sm:flex-row gap-3">
+						{prizes.map((prize) => (
+							<div
+								key={prize.place}
+								className="flex-1 bg-surface-2 rounded p-5 md:p-[18px_20px]"
+								style={{
+									border: `1px solid ${prize.color}44`,
+									borderTop: `3px solid ${prize.color}`,
+								}}
+							>
+								<div
+									className="font-[var(--font-barlow-condensed)] font-black italic uppercase mb-2"
+									style={{
+										fontSize: 22,
+										color: prize.color,
+										letterSpacing: "-0.01em",
+									}}
+								>
+									{prize.place}
+								</div>
+								<div
+									className="font-[var(--font-barlow-semi-condensed)] text-muted-text leading-snug"
+									style={{ fontSize: 15 }}
+								>
+									{prize.desc}
+								</div>
+							</div>
+						))}
+					</div>
+
+					{/* Extra prizes teaser */}
+					<div className="mt-4 w-full bg-gold/[0.03] rounded p-5 md:p-6 border border-dashed border-gold/40">
+						<div
+							className="font-[var(--font-barlow-condensed)] font-black italic uppercase text-gold mb-2"
+							style={{
+								fontSize: 20,
+								letterSpacing: "-0.01em",
+							}}
+						>
+							MORE THAN THE PODIUM
+						</div>
+						<div
+							className="font-[var(--font-barlow-semi-condensed)] text-[#C8C8C8] leading-relaxed"
+							style={{ fontSize: 16 }}
+						>
+							Extra on-the-spot prizes will be handed out throughout the event.
+							Everyone has a shot; you don't need to top the scoreboard to win.
+						</div>
+					</div>
+				</Section>
 				{/* Schedule */}
 				<Section title="Schedule" width="140">
+					<div
+						className="font-[var(--font-barlow-semi-condensed)] text-muted-text mb-4 leading-relaxed"
+						style={{ fontSize: 15 }}
+					>
+						When the lunch window is open participants are free to eat at any point
+						during that period. The competition continues; this is not a
+						mandatory break. There will also be snacks available throughout the day.
+					</div>
 					<div className="space-y-4">
 						{scheduleItems.map(([time, event]) => (
 							<div
@@ -212,59 +272,6 @@ export default function AboutPage() {
 								</span>
 							</div>
 						))}
-					</div>
-				</Section>
-
-				{/* Prizes */}
-				<Section title="Prizes" width="100">
-					<div className="flex flex-col sm:flex-row gap-3">
-						{prizes.map((prize) => (
-							<div
-								key={prize.place}
-								className="flex-1 bg-surface-2 rounded p-5 md:p-[18px_20px]"
-								style={{
-									border: `1px solid ${prize.color}44`,
-									borderTop: `3px solid ${prize.color}`,
-								}}
-							>
-								<div
-									className="font-[var(--font-barlow-condensed)] font-black italic uppercase mb-2"
-									style={{
-										fontSize: 22,
-										color: prize.color,
-										letterSpacing: "-0.01em",
-									}}
-								>
-									{prize.place}
-								</div>
-								<div
-									className="font-[var(--font-barlow-semi-condensed)] text-muted-text leading-snug"
-									style={{ fontSize: 15 }}
-								>
-									{prize.desc}
-								</div>
-							</div>
-						))}
-					</div>
-
-					{/* Extra prizes teaser */}
-					<div className="mt-4 w-full bg-gold/[0.03] rounded p-5 md:p-6 border border-dashed border-gold/40">
-						<div
-							className="font-[var(--font-barlow-condensed)] font-black italic uppercase text-gold mb-2"
-							style={{
-								fontSize: 20,
-								letterSpacing: "-0.01em",
-							}}
-						>
-							MORE THAN THE PODIUM
-						</div>
-						<div
-							className="font-[var(--font-barlow-semi-condensed)] text-[#C8C8C8] leading-relaxed"
-							style={{ fontSize: 16 }}
-						>
-							Extra on-the-spot prizes will be handed out throughout the event.
-							Everyone has a shot; you don't need to top the scoreboard to win.
-						</div>
 					</div>
 				</Section>
 

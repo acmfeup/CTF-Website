@@ -29,12 +29,13 @@ export function useTyping(lines: string[], speed = 45) {
 			}, speed);
 			return () => clearTimeout(timeout);
 		} else {
+			const isLastLine = state.lineIndex >= lines.length - 1;
 			const timeout = setTimeout(() => {
 				setState((s) => ({
 					...s,
 					lineIndex: s.lineIndex + 1,
 					charIndex: 0,
-					text: s.text + "\n",
+					text: s.text + (isLastLine ? "" : "\n"),
 				}));
 			}, 600);
 			return () => clearTimeout(timeout);
