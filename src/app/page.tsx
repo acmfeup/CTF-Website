@@ -7,12 +7,12 @@ import { useCountdown } from "@/hooks/useCountdown";
 import { useTyping } from "@/hooks/useTyping";
 
 export default function LandingPage() {
-	const { d, h, m, s } = useCountdown("2026-05-23T09:00:00-03:00");
+	const { d, h, m, s } = useCountdown("2026-05-23T09:00:00+01:00");
 	const typed = useTyping([
 		"$ ssh hacker@acm-xstf.dev -p 2026",
 		"Connected. Welcome, participant.",
-		"CTF starts: 2026-05-23 · 09:00 UTC-3",
-		"(TODO) 24h · 7 categories · 21 challenges",
+		"CTF starts: 2026-05-23 · 09:00 · FEUP",
+		"10h · 8 categories · 21 challenges",
 		"$ _",
 	]);
 
@@ -46,16 +46,10 @@ export default function LandingPage() {
 				<div className="flex items-center gap-4">
 					<Link
 						href="/about"
-						className="hidden md:block font-[var(--font-barlow-condensed)] font-bold italic uppercase text-sm tracking-wider text-muted-text hover:text-white transition-colors duration-150"
+						className="hidden md:block font-[var(--font-barlow-condensed)] font-bold italic uppercase text-[13px] tracking-wider px-3 py-[5px] bg-gold/10 text-gold border botder-gold/30 rounded transition-all duration-150"
 					>
 						ABOUT
 					</Link>
-					<Button variant="ghost" size="sm" onClick={() => {}}>
-						LOGIN
-					</Button>
-					<Button size="sm" onClick={() => {}}>
-						REGISTER
-					</Button>
 				</div>
 			</div>
 
@@ -107,7 +101,7 @@ export default function LandingPage() {
 						animationDelay: "0.5s",
 					}}
 				>
-					CAPTURE THE FLAG &nbsp;·&nbsp; MAY 23, 2026
+					CAPTURE THE FLAG &nbsp;·&nbsp; FEUP &nbsp;·&nbsp; MAY 23, 2026
 				</div>
 
 				{/* Countdown */}

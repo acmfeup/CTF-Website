@@ -33,15 +33,11 @@ function Section({
 }
 
 const scheduleItems = [
-	["TODO", "CORRECT Schedule"],
-	["MAY 20", "Registration closes. No new sign-ups after this date."],
-	["MAY 22 · 20:00", "Opening ceremony - on-site at FEUP."],
-	[
-		"MAY 23 · 00:00 UTC-3",
-		"CTF START - all challenges go live simultaneously.",
-	],
-	["MAY 24 · 00:00 UTC-3", "CTF END - no new flag submissions accepted."],
-	["MAY 24 · 12:00", "Award ceremony - prizes, recognition, post-mortem."],
+	["9:00", "Opening ceremony - B002, FEUP"],
+	["9:30", "Beginning of the competition"],
+	["12:00 - 13:00", "Lunch break"],
+	["19:30", "End of the competition"],
+	["20:00", "Closing ceremony & awards - B002, FEUP"],
 ];
 
 const rules = [
@@ -99,7 +95,7 @@ export default function AboutPage() {
 						className="font-[var(--font-barlow-semi-condensed)] text-[#C8C8C8] leading-relaxed max-w-[600px] mb-8"
 						style={{ fontSize: 19 }}
 					>
-						A cybersecurity competition organized by ACM FEUP and xSTF. X
+						A cybersecurity competition organized by ACM FEUP and xSTF. 8
 						categories, X challenges, one objective: solve them all.
 					</div>
 					<div className="flex flex-col sm:flex-row gap-3.5">
@@ -109,7 +105,7 @@ export default function AboutPage() {
 						<div className="flex gap-5 items-center sm:ml-2">
 							{[
 								["DATE", "May 23, 2026"],
-								["DURATION", "X hours"],
+								["DURATION", "10 hours"],
 								["FORMAT", "On-site"],
 							].map(([label, value]) => (
 								<div key={label}>

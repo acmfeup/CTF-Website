@@ -26,8 +26,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "ACM xSTF 2026 — CTF Event",
-	description: "Capture the Flag Competition by ACM and xSTF",
+	title: "ACM FEUP & xSTF 2026 - CTF Competition",
+	description: "Capture the Flag Competition by ACM FEUP and xSTF at FEUP",
 };
 
 export default function RootLayout({

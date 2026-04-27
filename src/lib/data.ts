@@ -6,6 +6,7 @@ export const CATDESC: Record<string, string> = {
 	osint: "Open source intelligence — finding people, places, public records.",
 	misc: "Miscellaneous — coding challenges, logic puzzles, anything goes.",
 	forensics: "Digital forensics — disk images, pcaps, steganography, memory.",
+	irl: "Work with people in the room to solve physical puzzles.",
 };
 
 export const CATEGORIES = [
@@ -16,6 +17,7 @@ export const CATEGORIES = [
 	"osint",
 	"misc",
 	"forensics",
+	"irl",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];
