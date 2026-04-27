@@ -186,8 +186,8 @@ export default function LandingPage() {
 					<Button size="lg" className="animate-gold-pulse" onClick={() => {}}>
 						REGISTER NOW
 					</Button>
-					<Link href="/about">
-						<Button variant="ghost" size="lg">
+					<Link href="/about" className="w-full sm:w-auto block">
+						<Button variant="ghost" size="lg" fullWidth>
 							LEARN MORE
 						</Button>
 					</Link>
@@ -195,16 +195,11 @@ export default function LandingPage() {
 
 				{/* Footer brand */}
 				<div className="absolute bottom-5 flex items-center gap-2.5 opacity-35">
-					<img
-						src="/logos/acm-logo.svg"
-						alt="ACM"
-						className="w-7 h-7 rounded"
-					/>
 					<span
 						className="font-[var(--font-ibm-plex-mono)] text-muted-text"
 						style={{ fontSize: 11, letterSpacing: "0.12em" }}
 					>
-						ACM STUDENT CHAPTER × xSTF 2026
+						ACM FEUP × xSTF 2026
 					</span>
 				</div>
 			</div>
