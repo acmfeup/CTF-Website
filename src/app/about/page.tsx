@@ -45,6 +45,7 @@ const rules = [
 	"Do not share flags or solutions with other teams.",
 	"Teams of up to 4 members.",
 	"Automated scanning against the platform is forbidden.",
+  "Use of AI is heavily discouraged and may be penalized if it leads to rule violations or unfair advantages.",
 	"All decisions by the organizing team are final.",
 	"Have fun. Respect other participants.",
 ];
@@ -95,8 +96,8 @@ export default function AboutPage() {
 						className="font-[var(--font-barlow-semi-condensed)] text-[#C8C8C8] leading-relaxed max-w-[600px] mb-8"
 						style={{ fontSize: 19 }}
 					>
-						A cybersecurity competition organized by ACM FEUP and xSTF. 8
-						categories, X challenges, one objective: solve them all.
+						A cybersecurity competition organized by ACM FEUP and xSTF. 10 hours, 8
+						categories, one objective: solve them all.
 					</div>
 					<div className="flex flex-col sm:flex-row gap-3.5">
 						<Link href="/">
@@ -190,7 +191,7 @@ export default function AboutPage() {
 					>
 						When the lunch window is open participants are free to eat at any point
 						during that period. The competition continues; this is not a
-						mandatory break. There will also be snacks available throughout the day.
+						mandatory break. There will also be snacks and drinks available throughout the day.
 					</div>
 					<div className="space-y-4">
 						{scheduleItems.map(([time, event]) => (

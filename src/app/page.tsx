@@ -12,8 +12,8 @@ export default function LandingPage() {
 		"$ ssh hacker@acm-xstf.dev -p 2026",
 		"Connected. Welcome, participant.",
 		"CTF starts: 2026-05-23 · 09:00 · FEUP",
-		"10h · 8 categories · 21 challenges",
-		"Refuel on us: lunch & snacks included.",
+		"10 hours · 8 categories",
+		"Refuel on us: lunch, snacks and drinks included.",
 		"$ ",
 	]);
 
