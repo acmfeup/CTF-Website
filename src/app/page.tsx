@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
+import { Logo } from "@/components/ui/Logo";
 import { useCountdown } from "@/hooks/useCountdown";
 import { useTyping } from "@/hooks/useTyping";
 
@@ -178,7 +178,17 @@ export default function LandingPage() {
 					className="flex flex-col sm:flex-row gap-3.5 animate-fade-up"
 					style={{ animationDelay: "0.9s" }}
 				>
-					<Button size="lg" className="animate-gold-pulse" onClick={() => {}}>
+					<Button
+						size="lg"
+						className="animate-gold-pulse"
+						onClick={() =>
+							window.open(
+								"https://forms.gle/GsPPQqYJ9RdNvbLCA",
+								"_blank",
+								"noopener,noreferrer",
+							)
+						}
+					>
 						REGISTER NOW
 					</Button>
 					<Link href="/about" className="w-full sm:w-auto block">
